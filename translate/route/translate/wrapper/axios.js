@@ -1,0 +1,1 @@
+module.exports=require('axios').create({timeout:3000});

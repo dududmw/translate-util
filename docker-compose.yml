@@ -1,0 +1,15 @@
+version: '2'
+services:
+    syntactic:
+        build:
+            context: .
+            dockerfile: syntactic.dockerfile
+        ports:
+          - "9001:9001"    
+    translate:
+        build:
+            context: .
+            dockerfile: translate.dockerfile
+        ports:
+          - "9000:9000"
+                
