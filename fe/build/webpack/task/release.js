@@ -9,7 +9,7 @@ program
     .parse(process.argv);
 var configFactoryPath=program.config?path.resolve('../config-factory',program.config):'../config-factory/standard';
 var configFactory = require(configFactoryPath);
-var config = configFactory(program.name, {
+var config = configFactory({
     uglify: true,
     productionEnv: true,
     inlineFileLimit: 1024 * 8,
